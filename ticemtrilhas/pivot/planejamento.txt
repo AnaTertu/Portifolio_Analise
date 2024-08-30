@@ -1,0 +1,36 @@
+Teste moderado remoto;
+
+10 usuários serão entrevistados para o teste;
+
+Lista de tarefas claras e objetivas a serem realizadas pelo usuário
+- Inicie o acesso ao app
+- Dado que você já tem um cadastro, insira se e-mail e senha e comece o acesso.
+- Crie nova partida
+- Verifique os participantes que irão participar da mesma partida escolhida.
+
+Para cada tarefa defina:
+
+Os objetivos das tarefas realizadas pelo usuário são:
+- Verificar se usuário acessa com facilidade os campos
+- Verificar se houve a confirmação com sucesso no agendamento de nova partida.
+
+Quais os passos que ele deve percorrer? 
+- clicar na tela inicial
+- inserir email e senha
+- clicar no botão 'entrar'
+- clicar no botão 'Criar nova partida'
+- selecionar a opção liberada 'Partida Privada'
+- Escolher a modalidade 'Basquete'
+- Encontrar a quedra, clicar em 'Quadra já definida'
+- Clicar no local definido
+- Escolher a opção 'Dunk Park'
+- Clicar em Çonfirmar'as escolhas definidas
+- Validar 'Partida criada com sucesso'
+
+O critérios de sucesso esperado: 
+- Deve aparecer um modal ''Partida criada com sucesso'''
+
+As dificuldades que o usuário pode enfrentar na execução da tarefa
+- não identificar como iniciar o acesso
+- não seguir o caminho esperado ao clicar no calendário ou mesmo cancelar
+  
