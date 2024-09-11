@@ -1,0 +1,35 @@
+Testes de usabilidade vêm sendo aplicados e discutidos pela comunidade de UX/UI há algum tempo. Deste modo podemos dizer que já existe uma série de "boas práticas" consolidadas.   
+Nesta atividade, gostaríamos de propor a você que entreviste um designer experiente e colha dicas de "boas práticas em teste de usabilidade". Aqui vão algumas sugestões de perguntas que você pode fazer:   
+ 
+Quais os principais desafios encontrados por você ao realizar testes de usabilidade? 
+O que devemos evitar em um teste de usabilidade?  
+Como você seleciona aquilo que deverá ser testado, dentro de uma aplicação?  
+Como você compartilha os resultados obtidos no teste com a sua equipe de desenvolvimento?  
+Como você seleciona as pessoas usuárias para participar do teste?  
+  
+Faça um resumo e compartilhe na discussão sobre o tema no Fórum da trilha!  
+
+
+
+Vamos para a segunda etapa do nosso desafio de testar o app Pivot?
+
+No desafio realizado no módulo anterior, você escolheu o tipo de teste de usabilidade, a quantidade de usuários para entrevistar e definiu duas tarefas específicas para eles realizarem.
+
+Agora chegou a hora de colocar a mão na massa e realizar um teste!
+
+Para isso, sugerimos as etapas a seguir:
+
+Crie um roteiro para seguir durante o teste;
+Utilize as 2 tarefas que você criou no desafio do módulo anterior para realizar o teste com os usuários;
+Anote insights durante todo o processo;
+Documente os resultados obtidos com cada usuário;
+Lembre-se sobre os tópicos abordados neste módulo:
+
+Apresente-se e contextualize o cenário para o usuário;
+Anote os feedbacks e tire dúvidas quando necessário;
+Agrupe as informações semelhantes e analise os resultados obtidos.
+Após finalizar o desafio, responda:
+
+Você realizou essa atividade?
+
+Nota: Esta é uma atividade em que você NÃO precisará incluir um documento mostrando seu trab
