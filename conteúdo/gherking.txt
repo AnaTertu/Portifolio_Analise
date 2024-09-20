@@ -1,0 +1,141 @@
+https://cucumber.io/docs/gherkin/
+
+https://cucumber.io/docs/gherkin/languages/
+
+https://cucumber.io/docs/gherkin/reference/#scenario-outline
+
+Utilizado no BDD (Behavior Driven Developer) o Gherking é um padrão de escrita universal, com suporte para muitas linguagens, deve ser escrito de forma clara, pois é possível reutilizar na automação.
+A escrita do Gherking é baseada em steps e cada início de uma step possui uma Keyword - padrão que determina ação ou validação a ser realizada
+https://cucumber.io/docs/guides/overview/
+
+3 Níveis 
+
+Steps in Gherkin -> matched with -> Steps definitions   ->  manipulates    -> System
+Dado que faço    ->  match com   -> meu código          -> e quando o      -> sistema
+                                    compreende toda        'step de 
+                                    vez q chamar "dado      definição'for
+                                    que faço" ele vai       chamada vai
+                                    ser compatível com      manipular esse
+                                    esse método da          dado do
+                                    automação
+
+Keyword - Given - When - And - Then
+
+- Given - (contexto) local inicial da validação - indica o contexto inicial do sistema
+- When  - 'ação principal' que gera um resultado (da nossa validação)
+- And - complemento da ação - massa de teste a ser utilizada
+- Then - resultado da ação
+
+- Given que sou aluno da plataforma Qualiters Club
+- And estou no curso Gherkin do básico ao avançado
+- When finalizo as aulas do curso
+- Then recebo meu certificado de conclusão
+
+- but - contra ponto para uma ação negativa - tratativa esperada
+
+Given que sou aluno da plataforma Qualiters Club
+When adiciono meus dados de acesso
+And insiro os dados incorretos
+Then o login não é realizado na plataforma
+But um toast de erro na tela
+
+"String"
+|Tabela|
+@tags
+#comentario
+
+@prioridade - gera valor do cliente - PO que define
+@severidade - bloqueia a aplicação
+@regressivo - qualquer processo de deploy tem que ser válidado
+
+Gherkin é uma linguagem de programação que descreve o comportamento do software, sendo uma das principais ferramentas do Desenvolvimento Orientado por Comportamento (BDD). 
+ 
+Gherkin é uma linguagem usada para descrever o comportamento esperado de um sistema em projetos de software. Essa abordagem padronizada permite que todos, independente do seu nível técnico, entendam como o sistema devee se comportar em diferentes situações.
+
+Gherkin é uma linguagem simples e legível, que facilita a compreensão e a criação de testes automatizados. Ela é escrita em passos, que especificam cada etapa de interação do usuário com o sistema. 
+ 
+Gherkin foi popularizado com o Cucumber e Behat, softwares para automatização de testes. 
+
+Gherkin é uma linguagem específica para escrever cenários de teste que pode ser usada dentro do BDD;
+x
+BDD é a abordagem ou metodologia de desenvolvimento que utiliza ferramentas como o Gherkin para garantir que o software seja desenvolvido de acordo com o comportamento desejado pelos stakeholders.
+x
+Cuncumber é uma ferramenta de automação de testes BDD popular que pode ser usada com diversas linguagens de programação, como Java, Ruby, JavaScript, etc;
+Cuncumber interpreta o texto escrito em Gherkin e o transforma em testes que podem ser executados;
+Quando um cenário em Gherkin é escrito, o Cuncumber o conecta ao código de teste.
+
+Características do Gherkin é escrito em uma uma sintaxe em inglês onde utilizamos palavras-chave como estrutura
+- Feature (Funcionalidade)
+- Scenario (Cenário)
+- Background (Contexto)
+- Given(Define o estado inicial), When(Descreve a ação principal realizada pelo usuário), Then(Define o resultado esperado após a ação), And, But - palavras-chave para a estruturar o fluxo do tese
+- Examples
+
+Quando usar o Gherkin
+- Quando há necessidae de criar uma comunicação clara sobre o comportamento do sistema entre as equipes;
+- Cenários de testes complexs e padronizados;
+- Projetos com desenvolvimento orientado ao comportamento (BDD) para descrever o comportamento do sistema
+- Também pode ser utilizado em projetos ágeis.
+
+Cenário básico
+Feature - Login de usuário
+
+Given que o usuário está na página de login
+When inserir seu nome cadastrado "usuario-teste"
+And inserir a senha "senha_valida"
+Then o usuário deve ser redirecionado para a página inicial vendo a mensagem de boas vindas "Bem-vindo, usuario_teste!"
+
+Cenário Avançado 
+Feature: A funcionalidade testada
+Background: Esse bloco é executado antes de cada cenário. Ele define o contexto comum para todos os cenários descritos.
+Scenario Outline: Permite reutilizaar um cenário, variando os dados de entrada. Os valores são substituidos conforme os exemplos fornecidos na tabela de Examples.
+Examples: Uma tabela de exemplos que fornece diferentes combinações de strings para testar o cenário outline. As colunas correspondem aos parâmetroscomo <username>, <password>, <messsage>, <page> que são substituídos durante a execução.
+
+arquivo - gherkin.feature
+
+Feature: Validação do login de usuário
+    Como um usuário cadastrado
+    Quero acessar minha conta
+    Para utilizar os recursos restritos do sistema
+
+Background:
+    Given que o usuário está na página de login
+
+Scenario Outline: Login com credenciais diferentes
+    When o usuário inserir seu nome cadastrado "<username>"
+    And inserir sua senha "<password>"
+    And clicar no botão de 'login'
+    Then o usuário deve ver a mensagem "<message>" sendo redirecionado para <page>
+
+Examples:
+    | username          | password       | message                                            | page
+    | usuario_valido    | senha_valida   | "Bem-vindo, usuario_valido"                        | "pagina inicial"  |
+    | usuario_valido    | senha_invalida | "Usuario ou senha incorretos"                      | "pagina de login" |
+    | usuario_invalido  | senha_valida   | "Usuario ou senha incorretos"                      | "pagina de login" |
+    | usuario_invalido  | senha_invalida | "Usuario ou senha incorretos"                      | "pagina de login" |
+    | usuario_bloqueado | senha_valida   | "Usuario bloqueado, entre em contato com suporte." | "pagina de login" |
+
+
+Extension
+
+Automação:
+Cucumber (Gherkin) Full Suppor
+
+Manual:
+Gherkin Indent
+Snippets and Syntax Highlight for Gherkin (Cucumber)
+
+
+Scenario Outline: Validar acesso com multiplos níveis
+    And utilizo dados de <nivel>
+    Then o login é realizado com sucesso
+
+    Exemplos:
+        | nivel |
+        | usuario |
+        | senha |
+        | admin |
+        | suporte |
+        | usuario |
+
+

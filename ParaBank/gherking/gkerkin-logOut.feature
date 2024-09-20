@@ -1,7 +1,7 @@
 @prioridade
-Feature : Feature Log Out - (Sair)
+Feature : Feature Log Out
 
-    Eu como usuário que estou logado na plataforma Parabank
+    Eu como cliente que estou logado na plataforma Parabank
     Gostaria de ao clicar em Log Out eu saia do sistema
     Por que assim serei deslogado.
 
@@ -25,3 +25,5 @@ Feature : Feature Log Out - (Sair)
         | admin |
         | suporte |
         | usuario |
+
+
